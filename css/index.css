@@ -22,7 +22,6 @@ vertical-align: baseline;
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
-    border: 1px solid pink !important;
 }
 body{
     font-size:1.6rem;
