@@ -146,13 +146,6 @@ button:hover{
         font-weight: bold;
     }
 
-    /* .title-container{
-        display:flex;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        justify-content: center;
-    } */
-
     .title-container div {	
         width:auto;
         height:37vh;
@@ -187,4 +180,9 @@ button:hover{
     .artist a {
         font-size: 150%;
         margin: 4% auto;
+    }
+
+    div.bio {
+        width: 120%;
+        margin-left: -8%;
     }

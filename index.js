@@ -205,11 +205,11 @@ const artists = [
 
 /* Task 1: Practice accessing data above by console.log-ing following items:
 
-(1) Name of the first artist (0th index) in the array
+(1) Name of the first artist (0th index) in the array*/
 
 console.log(artists[0]);
 
-(2) Bio of the third artist (2nd index) in the array */
+/* (2) Bio of the third artist (2nd index) in the array */
 
 console.log(artists[3]['bio']);
 
@@ -217,7 +217,7 @@ console.log(artists[3]['bio']);
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 artists[8]['name'] = 'Vincent Van Gogh';
-console.log(artists[8][name]);
+console.log(artists[8]['name']);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -348,9 +348,10 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
+
+// this is wrong, but I want to make a note to come back to this
 function getHTML(data){
-  let x;
-  for (x in data) {
+  for (let x in data) {
     return `<div id="artist">
 <div class="image">
     <img src=${this.image}/>
@@ -368,6 +369,7 @@ function getHTML(data){
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
+// this is wrong, but I want to make a note to come back to this 
 function randomize(dataArr){
   for (let i = dataArr.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i+1));
@@ -375,7 +377,7 @@ function randomize(dataArr){
   } return dataArr; 
   }
 
-let arr =   [10, 20, 30, 40, 50];
+let arr = [10, 20, 30, 40, 50];
 console.log(randomize(arr));
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
